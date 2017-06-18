@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="zycio">
+        <title>z-panel - demo</title>
+
+        <link href="libs/z-panel/z-panel.min.css" rel="stylesheet">
+        <link href="libs/themify-icons/css/themify-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <div ng-controller="DemoController as vm">
+            <h1>Z-table</h1>
+            <z-panel data="vm.data">
+                Example content
+            </z-panel>
+            <br/>
+            data:
+            <pre>{{vm.data | json}}</pre>
+        </div>
+
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/z-panel/z-panel.min.js"></script>
+
+        <script src="app.js"></script>
+        <script src="app.controller.js"></script>
+    </body>
+</html>

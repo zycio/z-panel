@@ -1,0 +1,73 @@
+@zPanelBlue: #008bd0;
+@zPanelWhite: #FFFFFF;
+@headerHeight: 40px;
+
+.zTransition(@type: all, @time: .3s, @ease: ease-in-out) {
+    -webkit-transition: @type @time @ease;
+    -moz-transition: @type @time @ease;
+    -o-transition: @type @time @ease;
+    transition: @type @time @ease;
+}
+
+.z-panel {
+    border: 1px solid @zPanelBlue;
+    width: 100%;
+    .zTransition;
+
+    &-fullscreen {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        border: 0;
+
+        .z-panel-content {
+            height: ~"calc(100vh - @{headerHeight})";
+        }
+    }
+
+    &-header {
+        height: @headerHeight;
+        line-height: @headerHeight;
+        background-color: @zPanelBlue;
+        color: @zPanelWhite;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        padding: 0 10px;
+
+        &-text {
+
+        }
+
+        &-buttons {
+            display: flex;
+
+            .ti {
+                margin-left: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    &-content {
+        padding: 10px;
+        background-color: @zPanelWhite;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        &-hidden {
+            min-height: 0;
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    }
+}

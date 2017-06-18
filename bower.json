@@ -1,0 +1,29 @@
+{
+  "name": "z-panel",
+  "description": "Simple z-panel.",
+  "main": [
+    "./dest/z-panel.css",
+    "./dest/z-panel.js"
+  ],
+  "authors": [
+    "zycio"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "zycio",
+    "panel",
+    "z-panel"
+  ],
+  "homepage": "https://github.com/zycio/z-panel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "themify-icons": "^0.1.2"
+  }
+}

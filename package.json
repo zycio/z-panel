@@ -1,0 +1,36 @@
+{
+  "name": "z-panel",
+  "version": "0.0.1",
+  "description": "Simple z-panel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zycio/z-panel.git"
+  },
+  "keywords": [
+    "zycio",
+    "z-panel"
+  ],
+  "author": "zycio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zycio/z-panel/issues"
+  },
+  "homepage": "https://github.com/zycio/z-panel#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-angular-templates": "^1.1.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jasmine-core": "^2.6.1",
+    "jit-grunt": "^0.10.0"
+  }
+}

@@ -1,0 +1,53 @@
+.z-panel {
+  border: 1px solid #008bd0;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.z-panel-fullscreen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  border: 0;
+}
+.z-panel-fullscreen .z-panel-content {
+  height: calc(100vh - 40px);
+}
+.z-panel-header {
+  height: 40px;
+  line-height: 40px;
+  background-color: #008bd0;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.z-panel-header-buttons {
+  display: flex;
+}
+.z-panel-header-buttons .ti {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.z-panel-header-buttons .ti:hover {
+  opacity: 0.8;
+}
+.z-panel-content {
+  padding: 10px;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.z-panel-content-hidden {
+  min-height: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
